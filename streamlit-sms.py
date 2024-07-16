@@ -72,7 +72,7 @@ if page == "Informasi SMS Spam":
     st.write("<br><br>", unsafe_allow_html=True)
 
     #ARTIKEL KE-2
-    st.title('Jensi Dan Tujuan SMS Spam')
+    st.title('Jenis Dan Tujuan SMS Spam')
     st.image("Assets/notification.gif",caption="Animasi notifikasi masuk", use_column_width=True)
     st.write("<br>", unsafe_allow_html=True)
     st.markdown(
