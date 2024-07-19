@@ -341,14 +341,14 @@ elif page == "List Hasil Deteksi":
     # Tampilkan tabel menggunakan AgGrid
     AgGrid(filtered_data, gridOptions=gridOptions, update_mode=GridUpdateMode.SELECTION_CHANGED)
 
-    # Tombol untuk mengunduh data dalam format CSV
-    csv = filtered_data.to_csv().encode('utf-8')
-    st.download_button(
-        label="Unduh data sebagai CSV",
-        data=csv,
-        file_name=f'{dataset_type.lower().replace(" ", "_")}_data.csv',
-        mime='text/csv',
-    )
+    # # Tombol untuk mengunduh data dalam format CSV
+    # csv = filtered_data.to_csv().encode('utf-8')
+    # st.download_button(
+    #     label="Unduh data sebagai CSV",
+    #     data=csv,
+    #     file_name=f'{dataset_type.lower().replace(" ", "_")}_data.csv',
+    #     mime='text/csv',
+    # )
 
 
 #Halaman Tentang Saya
